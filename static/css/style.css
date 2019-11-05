@@ -1,31 +1,149 @@
+/* Universal rules */
+
 * {
+    margin: 0px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+.flex_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    background-image: linear-gradient(-90deg, #0f0c29, #2e1d54);
 }
 
-#log_head{
-    align-content: center;
+.standard_head {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(-90deg, #0f0c29, #2e1d54);
+    width: 75%;
+    height: 15;
 }
-    #log_head h1 {
-    color: blue;
+    .standard_head a {
+        color: #c2a4e7;
+        margin-top: 15px;
     }
 
-table {
-    border-collapse: collapse;
-    width: 100%;
+button {
+    width: 90px;
+    padding:2px;
+    background-color: #8f339e;
+    color: white;
+    border: outset 2px black;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+    table {
+        width: 75%;
+        border-collapse: collapse;
+        border-radius: 4px;
     }
-  
+      
     td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
     }
-  
-    tr:nth-child(even) {
-    background-color: #dddddd;
+      
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    
+        tr:nth-child(odd) {
+            background-color: rgb(100, 97, 97);
+        }
+
+/* Login/Registration */
+
+#log_head {
+    background-image: linear-gradient(-45deg, #0f0c29, #2e1d54);
+    width: 75%;
+}
+
+#log_head p {
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bolder;
+    }
+    
+    #log_head h3 {
+        text-align: center;
+        padding-bottom: 15px;
+        color: #d1a8f7;
     }
 
-    * {box-sizing: border-box}
+.logDiv {
+    display: flex;
+    width: 15%;
+    margin: 20px 0px;
+}
+
+    .logDiv input{
+        display: block;
+        margin-top: 8px;
+        border: inset 2px black;
+        border-radius: 2px;
+        background-color: #dddddd;
+        box-shadow: 2px 2px rgb(36, 35, 35);
+    }
+
+    .logDiv input::placeholder{
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+
+
+
+/* dashboard */
+
+.content_container {
+    width: 75%;
+    background-image: linear-gradient(-90deg, #0f0c29, #2e1d54);
+    padding-bottom: 4%;
+}
+
+#welcome {
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    font-weight: bolder;
+}
+
+.events {
+    margin: 2% 0%;
+}
+
+    .events h3 {
+        margin-left: 15%;
+        margin-bottom: 2%;
+        color: #f0e4fa;
+    }
+
+/* Search page */
+
+#event_search {
+    padding: 4% 0%;
+    width: 75%;
+}
+
+.search_elements {
+    display: inline;
+    padding: .5%;
+    margin: 0% 1%;
+}
+
+    .search_elements h2 {
+        color: #f0e4fa;
+    }
+
+    .search_elements input {
+        border: inset 2px black;
+        border-radius: 2px;
+        background-color: #dddddd;
+        box-shadow: 2px 2px rgb(36, 35, 35);
+    }
 
 /* Style the tab */
 .tab {

@@ -10,43 +10,50 @@
 </head>
 
 <body>
-    <a href="">Home</a>
-    <a href="">New</a>
-    <a href="">Search</a>
-    <a href="">Account</a>
-    <form action="" method="post">
-        <input type="text">
-        <h2>Search by:</h2>
-        <select name="cars">
-            <option value="event_name">Event Name</option>
-            <option value="location">Location</option>
-            <option value="date">Date</option>
-            <option value="creator">Creator</option>
-        </select>
-        <input type="submit" value="Submit">
-    </form>
-    <table>
-        <tr>
-            <th>Event Name</th>
-            <th>Location</th>
-            <th>Attendees</th>
-            <th>Date</th>
-            <th>Creator</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td>Basketball</td>
-            <td>Greenfield Park</td>
-            <td>10</td>
-            <td>1/1/2019 1:45pm</td>
-            <td>Jim Bob</td>
-            <td>Join</td>
-        </tr>
-    </table>
-    <a href="">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
-
+    <div class="standard_head">
+        <a href="">Home</a>
+        <a href="">New</a>
+        <a href="">Search</a>
+        <a href="">Account</a>
+    </div>
+    <div class="content_container">
+        <div id="event_search">
+            <form action="" method="post">
+                <input type="text" class="search_elements" placeholder="keyword">
+                <h2 class="search_elements">Search by:</h2>
+                <select name="cars" class="search_elements">
+                    <option value="event_name">Event Name</option>
+                    <option value="location">Location</option>
+                    <option value="date">Date</option>
+                    <option value="creator">Creator</option>
+                </select>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <table>
+            <tr>
+                <th>Event Name</th>
+                <th>Location</th>
+                <th>Attendees</th>
+                <th>Date</th>
+                <th>Creator</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Basketball</td>
+                <td>Greenfield Park</td>
+                <td>10</td>
+                <td>1/1/2019 1:45pm</td>
+                <td>Jim Bob</td>
+                <td>Join</td>
+            </tr>
+        </table>
+        <div id="footer">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+        </div>
+    </div>
 </body>
 
 </html>
