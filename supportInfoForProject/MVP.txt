@@ -1,0 +1,59 @@
+--ISport project outline and feature list--
+
+--Goals--
+    1. Continue practicing Python/Flask.  
+    2. Design Project using MVC from the modularization section 
+    3. Take time to focus on learning more about classes and ORM's
+    4. Take design ideas and practices to the group project
+
+--Tech used-- 
+    1. HTML
+    2. CSS
+    3. JQuery
+    4. Python
+    5. Flask
+    6. SqlAlchemy
+    7. SQLite
+
+--Workflow--
+    1. Establish front end first
+    2. Fully complete login/registration (Should be able to complete quickly)
+    3. Build out sql tables using classes
+    3. Start backend route redirects/rendertemplates so each page is accessible
+    4. Working from the home page move through the other webpages building/testing features until the       project is completed  
+
+
+--Page feature list--
+    Note: only listing key features below
+
+(Login/registration) 
+    1. Page should be created with login/registration from DojoTweets.  
+
+    Note: See if you can figure out how to add a calendar so the user can click instead of typing in            their birthdate. 
+
+(Home page)
+    1. Page redirects located at top
+    2. User specific activities located on this page
+    3. Upper right corner should have an account page redirect that will display message notification       if any 
+    4. Two tables; upper table should display if an event is being done that day lower table should      display future events
+
+(Event Search)
+    1. Page redirects at top
+    2. Search function should be accessible via text input and dropdown menu
+    3. Table should update both member section and the action section (reference wireframe for more)        details
+    4. Multiple pages should redirect event's listed within the table. 
+
+(Event Info)
+    1. Page redirects at top
+    2. 3 different sections for info (reference wireframe for ideas)
+    3. Message board located at the bottom of the screen
+
+    Note: see if you can incorporate a map onto page to show location.  If not just add address. 
+
+(User info)
+    1. Should only be accessible to user logged in. 
+    2. Page redirects at top of page
+    3. General user info that can be edited
+    4. text display of upcoming events
+    5. Option to upload photo
+
