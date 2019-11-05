@@ -14,12 +14,13 @@
     5. Flask
     6. SqlAlchemy
     7. SQLite
+    8. AJAX (This is optional if time allows)
 
 --Workflow--
     1. Establish front end first
     2. Fully complete login/registration (Should be able to complete quickly)
     3. Build out sql tables using classes
-    3. Start backend route redirects/rendertemplates so each page is accessible
+    3. Start backend route redirects/rendertemplates so each page is accessible using RESTful routing
     4. Working from the home page move through the other webpages building/testing features until the       project is completed  
 
 
@@ -29,23 +30,23 @@
 (Login/registration) 
     1. Page should be created with login/registration from DojoTweets.  
 
-    Note: See if you can figure out how to add a calendar so the user can click instead of typing in            their birthdate. 
+    Note: See if you can figure out how to add a calendar so the user can click instead of typing in their birthdate. 
 
 (Home page)
     1. Page redirects located at top
     2. User specific activities located on this page
-    3. Upper right corner should have an account page redirect that will display message notification       if any 
-    4. Two tables; upper table should display if an event is being done that day lower table should      display future events
+    3. Upper right corner should have an account page redirect that will display message notification if any 
+    4. Two tables; upper table should display if an event is being done that day lower table should display future events
 
 (Event Search)
     1. Page redirects at top
-    2. Search function should be accessible via text input and dropdown menu
-    3. Table should update both member section and the action section (reference wireframe for more)        details
-    4. Multiple pages should redirect event's listed within the table. 
+    2. Search function should be accessible via text input (keyword) and dropdown menu(field type)
+    3. Table should update both member section and the action section (reference wireframe for more details)(added some styling from w3 schools)
+    4. Multiple pages should redirect event's listed within the table. (try to implement this using AJAX so page doesn't have to reload each time) 
 
 (Event Info)
     1. Page redirects at top
-    2. 3 different sections for info (reference wireframe for ideas)
+    2. 3 different sections for info (reference wireframe for ideas)(Added clickable vertical tabs to display info idea still needs lots of work and needs to be updated with correct info)
     3. Message board located at the bottom of the screen
 
     Note: see if you can incorporate a map onto page to show location.  If not just add address. 
