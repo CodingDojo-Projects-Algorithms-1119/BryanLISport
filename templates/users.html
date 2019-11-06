@@ -10,24 +10,32 @@
 </head>
 
 <body>
-    <a href="">Home</a>
-    <a href="">New</a>
-    <a href="">Search</a>
-    <a href="">Account</a>
-
-    <p>Name: Jim Bob</p>
-    <p>Email: ;lkajsdf;lkjqwer</p>
-    <p>password: *********</p>
-    <a href="">Edit</a>
-
-    <p>Event History:</p>
-    <p>{{Jinja Info}}</p>
-
-    <p>Future Events:</p>
-    <p>{{Jinja Info}}</p>
-
-    <img src="" alt="Profile Pic">
-    <button type="submit">Upload</button>
+    <div class="standard_head">
+        <a href="">Home</a>
+        <a href="">New</a>
+        <a href="">Search</a>
+        <a href="">Account</a>
+    </div>
+    <div id="user_container">
+        <div id="user_details">
+            <p>Name: Jim Bob</p>
+            <p>Email: ;lkajsdf;lkjqwer</p>
+            <p>password: *********</p>
+            <a href="">Edit</a>
+        </div>
+        <div id="profile_pic">
+            <img src="../supportInfoForProject/pAWXMnvfQPyfdthf6ZeUaM-320-80.jpg" alt="Profile Pic">
+            <button type="submit">Upload</button>
+        </div>
+        <div id="user_future_events">
+            <p>Future Events:</p>
+            <p>{{Jinja Info}}</p>
+        </div>
+        <div id="event_history">
+            <p>Event History:</p>
+            <p>{{Jinja Info}}</p>
+        </div>
+    </div>
 </body>
 
 </html>

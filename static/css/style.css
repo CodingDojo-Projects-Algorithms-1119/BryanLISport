@@ -32,27 +32,30 @@ button {
     border: outset 2px black;
     border-radius: 2px;
     margin-top: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
 }
 
-    table {
-        width: 75%;
-        border-collapse: collapse;
-        border-radius: 4px;
-    }
+.event_details {
+    width: 75%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    box-shadow: 2px 2px black;
+}
       
-    td, th {
+    .event_details td, th {
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
     }
       
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
+    .event_details tr:nth-child(even) {
+        background-color: #dddddd;
+    }
     
-        tr:nth-child(odd) {
-            background-color: rgb(100, 97, 97);
-        }
+    .event_details tr:nth-child(odd) {
+        background-color: rgb(100, 97, 97);
+    }
 
 /* Login/Registration */
 
@@ -134,34 +137,107 @@ button {
     margin: 0% 1%;
 }
 
-    .search_elements h2 {
+    h2.search_elements {
         color: #f0e4fa;
     }
 
-    .search_elements input {
+    select, input.search_elements {
         border: inset 2px black;
         border-radius: 2px;
         background-color: #dddddd;
         box-shadow: 2px 2px rgb(36, 35, 35);
     }
 
+#footer {
+    margin-top: 1%;
+}
+
+    #footer td {
+        border: solid 2px rgb(100, 97, 97);
+        padding: 4px 6px;
+        box-shadow: 3px 2px rgb(0, 0, 0);
+    }
+
+    #footer a {
+        color: #dddddd;
+        text-decoration: none;
+    }
+
+/* Users Page */
+
+#user_container {
+    width: 75%;
+    background-image: linear-gradient(-90deg, #0f0c29, #2e1d54);
+}
+
+#user_details {
+    width: 400px;
+    margin: 75px 0px 25px 50px;
+    vertical-align: top;
+    display: inline-block;
+    color: #d1a8f7;
+}
+
+    #user_details a {
+        color: #8f339e;
+    }
+
+#profile_pic {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    align-content: center;
+    margin: 75px 0px 10px 310px;
+}
+
+#profile_pic img {
+    width: 300px;
+    align-content: center;
+    color: white;
+}
+
+#profile_pic button {
+margin: 10px 0px 0px 105px;
+}
+
+#user_future_events {
+    width: 400px;
+    margin: 50px 0px 25px 50px;
+    display: inline-block;
+    color: #d1a8f7;
+}
+
+#event_history {
+    width: 400px;
+    margin: 50px 0px 0px 50px;
+    padding-bottom: 50px;
+    display: block;
+    color: #d1a8f7;
+}
+
+/* event Details */
+
+#event_details_container {
+    width: 75%;
+    padding-top: 50px;
+    background-image: linear-gradient(-90deg, #0f0c29, #2e1d54);
+}
+
 /* Style the tab */
 .tab {
   float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
   width: 30%;
-  height: 300px;
+  height: 210px;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
     display: block;
-    background-color: inherit;
+    background-color:  rgb(100, 97, 97);
     color: black;
     padding: 22px 16px;
     width: 100%;
-    border: none;
+    border: solid 2px lightgray;
     outline: none;
     text-align: left;
     cursor: pointer;
@@ -182,8 +258,18 @@ button {
 .tabcontent {
     float: left;
     padding: 0px 12px;
-    border: 1px solid #ccc;
-    width: 70%;
-    border-left: none;
-    height: 300px;
+    border: solid 2px lightgray;
+    margin-top: 8px;
+    color: white;
+    width: 50%;
+    height: 210px;
+}
+
+#message_board {
+    display: inline-block;
+    width: 60%;
+    margin: 50px 200px 40px 50px; 
+    padding: 20px;
+    border: inset 2px #d1a8f7; 
+    color: white;
 }
