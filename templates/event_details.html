@@ -10,32 +10,35 @@
     <title>Event Details</title>
 </head>
 
-<body>
+<body onload="hideContent();">
     <div class="standard_head">
         <a href="">Home</a>
         <a href="">New</a>
         <a href="">Search</a>
         <a href="">Account</a>
     </div>
-    <div id="event_details_container">
+    <div class="event_details_container">
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <button class="tablinks" onclick="openContent(event, 'event_date')">Event Date</button>
+            <button class="tablinks" onclick="openContent(event, 'important_info')">Information</button>
+            <button class="tablinks" onclick="openContent(event, 'participants')">Participants</button>
         </div>
 
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
+        <div id="event_date"class="tabcontent">
+            <h3>Event Date</h3>
             <p>London is the capital city of England.</p>
         </div>
 
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.1050568662254!2d-111.76477428440275!3d33.394423259554245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba8caa152c97b%3A0x2a846d3d55f98576!2sCountryside%20Park!5e0!3m2!1sen!2sus!4v1573097640932!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="">
+        </iframe>
+
+        <div id="important_info" class="tabcontent">
+            <h3>Information</h3>
             <p>Paris is the capital of France.</p>
         </div>
 
-        <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
+        <div id="participants" class="tabcontent">
+            <h3>Participants</h3>
             <p>Tokyo is the capital of Japan.</p>
         </div>
 

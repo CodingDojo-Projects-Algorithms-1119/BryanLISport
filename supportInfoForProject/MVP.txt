@@ -49,12 +49,11 @@
     2. 3 different sections for info (reference wireframe for ideas)(Added clickable vertical tabs to display info idea still needs lots of work and needs to be updated with correct info)
     3. Message board located at the bottom of the screen
 
-    Note: see if you can incorporate a map onto page to show location.  If not just add address. 
+    Note: to show location; when creating new event add a form section that embeds a voluntary google map location see if you can use a google maps api that allows for user to add address and google maps shows proper address on event details page. 
 
 (User info)
-    1. Should only be accessible to user logged in. 
+    1. Profile info should only be accessible to user logged in. 
     2. Page redirects at top of page
-    3. General user info that can be edited
     4. text display of upcoming events
-    5. Option to upload photo
+    5. Option to upload photo (ajax if possible or just use a page redirect if time is limited)
 
