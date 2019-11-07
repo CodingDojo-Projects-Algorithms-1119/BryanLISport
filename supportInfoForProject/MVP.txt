@@ -49,7 +49,7 @@
     2. 3 different sections for info (reference wireframe for ideas)(Added clickable vertical tabs to display info idea still needs lots of work and needs to be updated with correct info)
     3. Message board located at the bottom of the screen
 
-    Note: to show location; when creating new event add a form section that embeds a voluntary google map location see if you can use a google maps api that allows for user to add address and google maps shows proper address on event details page. 
+    Note: Encountered an issue where location could be too large a database to handle for this project.  For now I am going to select a region with 10 parks and store a google maps image with the park showing.  
 
 (User info)
     1. Profile info should only be accessible to user logged in. 
