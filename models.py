@@ -2,8 +2,8 @@ from sqlalchemy.sql import func
 from config import db
 
 users_and_events = db.Table("users_and_events",
-                   db.Column('user_id', db.Integer, db.ForeignKey(user.id), primary_key=True),
-                   db.Column('event_id', db.Integer, db.ForeignKey(event.id), primary_key=True)) 
+                   db.Column('user_id', db.Integer, db.ForeignKey("user.id"), primary_key=True),
+                   db.Column('event_id', db.Integer, db.ForeignKey("event.id"), primary_key=True)) 
 
 class User(db.Model):	
     id = db.Column(db.Integer, primary_key=True)
@@ -29,6 +29,6 @@ class Message(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
     user = db.relationship("User", foreign_keys=[user_id], backref="user_message", cascade="all")
     event_id = db.Column(db.Integer, db.ForeignKey("event.id"), nullable=False)
-    event = db.Column(db.Integer, db.ForeignKey[event_id], backref="event_messages", cascade="all")
+    event = db.relationship("Event", foreign_keys=[event_id], backref="event_messages", cascade="all")
     created_at = db.Column(db.DateTime, server_default=func.now())
     updated_at = db.Column(db.DateTime, server_default=func.now(), onupdate=func.now())
