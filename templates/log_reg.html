@@ -17,13 +17,20 @@
     </div>
     <div class="flex_container">
         <div class="logDiv">
-            <form action="/validation" method="POST">
+            <form action="/register" method="POST">
                 <input type="text" name="first_name" placeholder="First Name">
                 <input type="text" name="last_name" placeholder="Last Name">
                 <input type="text" name="email" placeholder="Email">
                 <input type="password" name="password" placeholder="Password">
                 <input type="password" name="conf_pass" placeholder="Confirm Password">
                 <button type="submit" name="submit" class="log_button">Register</button>
+                {% with messages = get_flashed_messages() %}    
+                    {% if messages %}                           
+                        {% for message in messages %}            
+                            <p>{{message}}</p>                
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
             </form>
         </div>
         <div class="logDiv">

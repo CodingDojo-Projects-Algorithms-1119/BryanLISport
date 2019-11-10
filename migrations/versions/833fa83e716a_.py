@@ -1,8 +1,8 @@
 """empty message
 
-Revision ID: 2600e4d803d4
+Revision ID: 833fa83e716a
 Revises: 
-Create Date: 2019-11-08 15:01:31.260544
+Create Date: 2019-11-09 20:26:31.678673
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '2600e4d803d4'
+revision = '833fa83e716a'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -21,8 +21,7 @@ def upgrade():
     op.create_table('event',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('event_name', sa.String(length=55), nullable=True),
-    sa.Column('info', sa.String(length=500), nullable=True),
-    sa.Column('participants', sa.Integer(), nullable=True),
+    sa.Column('time', sa.DateTime(), nullable=True),
     sa.Column('location', sa.String(length=100), nullable=True),
     sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
@@ -32,6 +31,8 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('first_name', sa.String(length=55), nullable=True),
     sa.Column('last_name', sa.String(length=55), nullable=True),
+    sa.Column('email', sa.String(length=55), nullable=True),
+    sa.Column('password', sa.Text(length=55), nullable=True),
     sa.Column('created_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.Column('updated_at', sa.DateTime(), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
     sa.PrimaryKeyConstraint('id')

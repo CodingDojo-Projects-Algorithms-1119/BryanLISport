@@ -18,10 +18,10 @@
 
 --Workflow--
     1. Establish front end first
-    2. Fully complete login/registration (Should be able to complete quickly)
-    3. Build out sql tables using classes
-    3. Start backend route redirects/rendertemplates so each page is accessible using RESTful routing
-    4. Working from the home page move through the other webpages building/testing features until the       project is completed  
+    2. Build out sql tables using classes
+    3. Fully complete login/registration (Should be able to complete quickly)
+    4. build backend route redirects/rendertemplates so each page is accessible using RESTful routing
+    5. Working from the home page move through the other webpages building/testing features until the       project is completed  
 
 
 --Page feature list--
