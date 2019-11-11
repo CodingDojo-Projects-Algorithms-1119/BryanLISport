@@ -36,18 +36,20 @@
                 <th>Event Name</th>
                 <th>Location</th>
                 <th>Attendees</th>
-                <th>Date</th>
+                <th>Date and Time</th>
                 <th>Creator</th>
                 <th>Action</th>
             </tr>
-            <tr>
-                <td>Basketball</td>
-                <td>Greenfield Park</td>
-                <td>10</td>
-                <td>1/1/2019 1:45pm</td>
-                <td>Jim Bob</td>
-                <td>Join</td>
-            </tr>
+            {% for event in all_events %}
+                <tr>
+                    <td>{{event.event_name}}</td>
+                    <td>{{event.location}}</td>
+                    <td>10</td>
+                    <td>{{event.time}}</td>
+                    <td>Jim Bob</td>
+                    <td><a href="/join_event/{{event.id}}">Join</a></td>
+                </tr>
+            {% endfor %}
         </table>
         <div id="footer">
            <table>

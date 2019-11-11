@@ -1,0 +1,1 @@
+INSERT INTO event (event_name, time, location) VALUES ("BasketBall", "2019-11-11 04:00:00", "Greenfield Park")

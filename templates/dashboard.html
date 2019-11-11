@@ -45,12 +45,14 @@
                     <th>Attendees</th>
                     <th>Time</th>
                 </tr>
-                <tr>
-                    <td>Basketball</td>
-                    <td>Greenfield Park</td>
-                    <td>10</td>
-                    <td>1:30 pm</td>
-                </tr>
+                {% for event in users_events %}
+                    <tr>
+                        <td><a href="/event_details/{{event.id}}">{{event.event_name}}</a></td>
+                        <td>{{event.location}}</td>
+                        <td>10</td>
+                        <td>{{event.time}}</td>
+                    </tr>
+                {% endfor %}
             </table>
         </div>
     </div>
