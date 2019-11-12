@@ -44,7 +44,7 @@
         </div>
 
         <div id="post_message">
-            <form action="/post_event_message/<event_id>" method="POST">
+            <form action="/post_event_message/{{event_id}}" method="POST">
                 <textarea name="create_message" cols="30" rows="4"></textarea>
                     <p>Character count is 150</p>
                     {% with messages = get_flashed_messages() %}    

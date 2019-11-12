@@ -132,4 +132,4 @@ class Message(db.Model):
             message_being_posted = Message(content = form_message["create_message"], user_id = session["user_id"], event_id = form_message["event_id"])
             db.session.add(message_being_posted)
             db.session.commit()
-            return message_being_posted, is_valid
+            return message_being_posted

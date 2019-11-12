@@ -1,5 +1,5 @@
 from config import app
-from controller_functions import login_register, dashboard, user_info, event_details, search, register_new_user, logout, login, join_event
+from controller_functions import login_register, dashboard, user_info, event_details, search, register_new_user, logout, login, join_event, post_event_message
 
 # Render Templates
 
@@ -20,6 +20,8 @@ app.add_url_rule("/register", view_func=register_new_user, methods=["POST"])
 app.add_url_rule("/login", view_func=login, methods=["POST"])
 
 app.add_url_rule("/join_event/<event_id>", view_func=join_event)
+
+app.add_url_rule("/post_event_message/<event_id>", view_func=post_event_message, methods=["POST"])
 
 # Simple Redirects
 
