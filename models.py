@@ -114,7 +114,7 @@ class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(150))
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
-    user = db.relationship("User", foreign_keys=[user_id], backref=("user_message"), cascade="all")
+    user = db.relationship("User", foreign_keys=[user_id], backref="user_message", cascade="all")
     event_id = db.Column(db.Integer, db.ForeignKey("event.id"), nullable=False)
     event = db.relationship("Event", foreign_keys=[event_id], backref="event_messages", cascade="all")
     created_at = db.Column(db.DateTime, server_default=func.now())

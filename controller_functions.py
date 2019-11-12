@@ -24,7 +24,8 @@ def user_info():
 
 def event_details(event_id):
     details = Event.query.get(event_id)
-    posted_messages = Message.query.filter_by(event_id = event_id, user_id=session["user_id"])
+    filtered_messages = Message.query.filter_by(event_id = event_id)
+    posted_messages = filtered_messages.user_message.first_name
     return render_template("event_details.html", information=details, posts=posted_messages)
 
 def search():
@@ -58,13 +59,13 @@ def join_event(event_id):
     db.session.commit()
     return redirect("/event_details/{}".format(event_id))
 
-def post_event_message(event_id):
+def post_event_message():
     post_event_message = Message.post_message(request.form)
-
+    
     if not post_event_message:
         return redirect("/event_details/<event_id>")
     else:
-        return redirect("/event_details/{}".format(event_id))
+        return redirect("/event_details/<event_id>")
 
 
 #Simple Redirects

@@ -21,7 +21,7 @@ app.add_url_rule("/login", view_func=login, methods=["POST"])
 
 app.add_url_rule("/join_event/<event_id>", view_func=join_event)
 
-app.add_url_rule("/post_event_message/<event_id>", view_func=post_event_message, methods=["POST"])
+app.add_url_rule("/post_event_message", view_func=post_event_message, methods=["POST"])
 
 # Simple Redirects
 
