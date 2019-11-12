@@ -43,6 +43,7 @@
     2. Search function should be accessible via text input (keyword) and dropdown menu(field type)
     3. Table should update both member section and the action section (reference wireframe for more details)(added some styling from w3 schools)
     4. Multiple pages should redirect event's listed within the table. (try to implement this using AJAX so page doesn't have to reload each time) 
+    5. Right now clicking "join" adds the user to the event and redirects to that specific events page.  If there is time change it so join redirects to event details then add a join option to that page so the user can see details before deciding. 
 
 (Event Info)
     1. Page redirects at top

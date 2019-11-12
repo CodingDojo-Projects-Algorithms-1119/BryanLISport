@@ -55,7 +55,11 @@ def join_event(event_id):
     event_being_joined = Event.query.get(event_id)
     user_joining_event.events_user_attends.append(event_being_joined)
     db.session.commit()
-    return redirect("/search")
+    return redirect("/event_details/<event_id>")
+
+def post_event_message(event_id):
+    post_event_message = Message.post_message(request.form)
+    return redirect("/event_details/<event_id>", posts=post_event_message)
 
 
 #Simple Redirects

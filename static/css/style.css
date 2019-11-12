@@ -262,18 +262,25 @@ margin: 10px 0px 0px 105px;
     background-color: rgb(122, 122, 122);
     color: white;
     width: 35%;
-    height: 208px;
+    height: 210px;
 }
 
 iframe {
     margin: 10px 0px 0px 50px;
 }
 
-#message_board {
+.message_board {
     display: inline-block;
+    min-height: 125px;
+    max-height: 125px;
     width: 60%;
-    margin: 50px 200px 40px 50px; 
-    padding: 20px;
+    margin: 20px 200px 40px 50px; 
+    padding: 5px 20px;
     border: inset 2px #d1a8f7; 
     color: white;
+}
+
+#post_message {
+    display: inline-block;
+    margin: 50px 0px 0px 50px;
 }

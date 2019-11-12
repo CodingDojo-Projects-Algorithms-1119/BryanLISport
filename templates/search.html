@@ -42,7 +42,7 @@
             </tr>
             {% for event in all_events %}
                 <tr>
-                    <td>{{event.event_name}}</td>
+                    <td><a href="/event_details/{{event.id}}">{{event.event_name}}</a></td>
                     <td>{{event.location}}</td>
                     <td>10</td>
                     <td>{{event.time}}</td>

@@ -35,18 +35,34 @@
 
         <div id="important_info" class="tabcontent">
             <h3>Information</h3>
-            <p>Paris is the capital of France.</p>
+            <p>{{information.event_details}}</p>
         </div>
 
         <div id="participants" class="tabcontent">
             <h3>Participants</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <p>Still working on this</p>
         </div>
 
-        <div id="message_board">
+        <div id="post_message">
+            <form action="/post_event_message/<event_id>" method="POST">
+                <textarea name="create_message" cols="30" rows="4"></textarea>
+                    <p>Character count is 150</p>
+                    {% with messages = get_flashed_messages() %}    
+                    {% if messages %}                           
+                        {% for message in messages %}            
+                            <p>{{message}}</p>                
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+                <button type="submit" name="submit" class="log_button">Post Message</button>
+            </form>
+        </div>
+
+        <div class="message_board">
             <p>Messages:</p>
-            <p>Tim: what's poppin</p>
-            <p>Bob: popcorn</p>
+            {%for post in posts%}
+                <p>{{post.first_name}}</p>{{post.content}}</p>
+            {% endfor %}
         </div>
     </div>
 </html>
