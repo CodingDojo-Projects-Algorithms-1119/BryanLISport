@@ -16,7 +16,7 @@ def dashboard():
 
     else:
         logged_in = User.query.get(session["user_id"])
-        events = logged_in.events_user_attends.all()
+        events = logged_in.events_user_attends.order_by(Event.time).all()
         return render_template("dashboard.html", user=logged_in, users_events = events)
 
 def user_info():
@@ -25,7 +25,7 @@ def user_info():
 def event_details(event_id):
     details = Event.query.get(event_id)
     filtered_messages = Message.query.filter_by(event_id = event_id)
-    posted_messages = filtered_messages.user_message.first_name
+    posted_messages = filtered_messages
     return render_template("event_details.html", information=details, posts=posted_messages)
 
 def search():
@@ -64,8 +64,8 @@ def post_event_message():
     
     if not post_event_message:
         return redirect("/event_details/<event_id>")
-    else:
-        return redirect("/event_details/<event_id>")
+
+    return redirect("/event_details/<event_id>")
 
 
 #Simple Redirects
